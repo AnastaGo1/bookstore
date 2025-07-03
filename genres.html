@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книги по жанрам | World of Books</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="img/icons/favicon all.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/icons/book.svg" alt="World of Books"></a>
+                        <a href="index.html"><span>World of Books</span></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Название книги или автор">
+                        <button><img src="img/icons/search.svg" alt="Поиск"></button>
+                    </div>
+                    <nav class="user-nav">
+                        <a href="#"><img src="img/icons/notify.svg" alt="Уведомления"> Уведомления</a>
+                        <a href="wishlist.html"><img src="img/icons/heart.svg" alt="Отложено"> Отложено</a>
+                        <a href="cart.html"><img src="img/icons/shop.svg" alt="Корзина"> Корзина</a>
+                        <a href="#">Регистрация</a>
+                        <a href="#">Вход</a>
+                    </nav>
+                </div>
+                <nav class="main-nav">
+                    <a href="contacts.html">Контакты</a>
+                    <a href="locations.html">Где мы?</a>
+                    <a href="index.html">Популярные книги</a>
+                    <a href="genres.html">Книги по жанрам</a>
+                    <a href="categories.html">Книги по категориям</a>
+                    <a href="index.html#reviews">Новые отзывы</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h2>Книги по жанрам</h2>
+                
+                <div class="genre-section">
+                    <h3>Фантастика</h3>
+                    <div class="books-grid">
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/genre/GameP.svg" alt="Игра престолов">
+                                <button class="heart-btn" data-id="3"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Джордж Мартин</div>
+                                <div class="book-title">Игра престолов</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/genre/Dune.svg" alt="Дюна">
+                                <button class="heart-btn" data-id="4"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Фрэнк Герберт</div>
+                                <div class="book-title">Дюна</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/genre/Metro2033.svg" alt="Метро 2033">
+                                <button class="heart-btn" data-id="5"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Дмитрий Глуховский</div>
+                                <div class="book-title">Метро 2033</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/genre/Vedmak.svg" alt="Ведьмак">
+                                <button class="heart-btn" data-id="6"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Анджей Сапковский</div>
+                                <div class="book-title">Ведьмак</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/genre/451С.svg" alt="451 градус по Фаренгейту">
+                                <button class="heart-btn" data-id="7"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Рэй Брэдбери</div>
+                                <div class="book-title">451 градус по Фаренгейту</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/popular/GarryP.svg" alt="Гарри Поттер">
+                                <button class="heart-btn" data-id="2"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Джоан Роулинг</div>
+                                <div class="book-title">Гарри Поттер</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="genre-section">
+                    <h3>Детектив</h3>
+                    <div class="books-grid">
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/popular/GreenM.svg" alt="Зеленая миля">
+                                <button class="heart-btn" data-id="1"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Стивен Кинг</div>
+                                <div class="book-title">Зеленая миля</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/redakt/Dorian.svg" alt="Портрет Дориана Грея">
+                                <button class="heart-btn" data-id="8"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Оскар Уайльд</div>
+                                <div class="book-title">Портрет Дориана Грея</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/redakt/Grim.svg" alt="Грим">
+                                <button class="heart-btn" data-id="9"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Анна Гаврилова</div>
+                                <div class="book-title">Грим</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/redakt/Rock.svg" alt="Роковая музыка">
+                                <button class="heart-btn" data-id="10"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Елена Звездная</div>
+                                <div class="book-title">Роковая музыка</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/redakt/Tango.svg" alt="Танго с тенями">
+                                <button class="heart-btn" data-id="11"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Александра Маринина</div>
+                                <div class="book-title">Танго с тенями</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                            <div class="book-image-container">
+                                <img src="img/review/PovMux.svg" alt="Повелитель мух">
+                                <button class="heart-btn" data-id="12"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="book-info">
+                                <div class="book-author">Уильям Голдинг</div>
+                                <div class="book-title">Повелитель мух</div>
+                                <div class="book-actions">
+                                    <button class="btn-buy">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+         <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h3>Помощь</h3>
+                        <ul>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Курьерская доставка</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Розничная сеть</h3>
+                        <ul>
+                            <li><a href="locations.html">Адреса магазинов</a></li>
+                            <li><a href="#">Хотите у нас работать?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Важно</h3>
+                        <ul>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                            <li><a href="#">Предзаказ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Мы в соцсетях</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-vk"></i> Вконтакте</a></li>
+                            <li><a href="#"><i class="fab fa-telegram"></i> Телеграм</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 World of Books. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

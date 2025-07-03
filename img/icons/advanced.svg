@@ -1,0 +1,13 @@
+<svg width="378" height="314" viewBox="0 0 378 314" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17" cy="18" r="15" fill="#CA1E1E"/>
+<path d="M175.428 3C163.086 8.59965 153.721 19.6082 150.356 33H13V3H175.428Z" fill="#CA1E1E"/>
+<rect x="15" y="95" width="112" height="30" fill="#CA1E1E"/>
+<circle cx="17" cy="110" r="15" fill="#CA1E1E"/>
+<path d="M179.428 217C167.086 211.4 157.721 200.392 154.356 187H17V217H179.428Z" fill="#CA1E1E"/>
+<circle cx="17" cy="202" r="15" fill="#CA1E1E"/>
+<rect x="15" y="280" width="286" height="30" fill="#CA1E1E"/>
+<circle cx="15" cy="295" r="15" fill="#CA1E1E"/>
+<circle cx="301" cy="295" r="15" fill="#CA1E1E"/>
+<line x1="331.341" y1="239.021" x2="361.021" y2="293.659" stroke="#CA1E1E" stroke-width="30" stroke-linecap="round"/>
+<path d="M268 0C328.751 0 378 49.2487 378 110C378 170.751 328.751 220 268 220C207.249 220 158 170.751 158 110C158 49.2487 207.249 0 268 0ZM268 30C223.817 30 188 65.8172 188 110C188 154.183 223.817 190 268 190C312.183 190 348 154.183 348 110C348 65.8172 312.183 30 268 30Z" fill="#CA1E1E"/>
+</svg>

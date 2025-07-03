@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | World of Books</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="img/icons/favicon all.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/icons/book.svg" alt="World of Books"></a>
+                        <a href="index.html"><span>World of Books</span></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Название книги или автор">
+                        <button><img src="img/icons/search.svg" alt="Поиск"></button>
+                    </div>
+                    <nav class="user-nav">
+                        <a href="#"><img src="img/icons/notify.svg" alt="Уведомления"> Уведомления</a>
+                        <a href="wishlist.html"><img src="img/icons/heart.svg" alt="Отложено"> Отложено</a>
+                        <a href="cart.html"><img src="img/icons/shop.svg" alt="Корзина"> Корзина</a>
+                        <a href="login.html">Регистрация</a>
+                        <a href="login.html">Вход</a>
+                    </nav>
+                </div>
+                <nav class="main-nav">
+                    <a href="contacts.html">Контакты</a>
+                    <a href="locations.html">Где мы?</a>
+                    <a href="index.html">Популярные книги</a>
+                    <a href="genres.html">Книги по жанрам</a>
+                    <a href="categories.html">Книги по категориям</a>
+                    <a href="index.html#reviews">Новые отзывы</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="cart-header">
+                    <h2>Корзина</h2>
+                    <div class="cart-notice">
+                        Отметьте галочками товары для множественного выбора
+                        <button class="select-all-btn" id="selectAllBtn">Отметить все товары</button>
+                    </div>
+                </div>
+                
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart-message">
+                        Ваша корзина пуста. Перейдите в <a href="index.html">каталог</a>, чтобы добавить товары.
+                    </div>
+                </div>
+
+                <div class="cart-total" id="cartTotal" style="display: none;">
+                    <button class="btn-clear-cart" id="clearCartBtn">Очистить корзину</button>
+                    <button class="btn-checkout" id="postponeBtn">Отложить товары</button>
+                    <button class="btn-checkout" id="checkoutBtn">Оформить заказ</button>
+                </div>
+            </div>
+        </main>
+
+         <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h3>Помощь</h3>
+                        <ul>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Курьерская доставка</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Розничная сеть</h3>
+                        <ul>
+                            <li><a href="locations.html">Адреса магазинов</a></li>
+                            <li><a href="#">Хотите у нас работать?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Важно</h3>
+                        <ul>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                            <li><a href="#">Предзаказ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Мы в соцсетях</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-vk"></i> Вконтакте</a></li>
+                            <li><a href="#"><i class="fab fa-telegram"></i> Телеграм</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 World of Books. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-content">
+            <h3 class="modal-title">Оформление заказа</h3>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Имя</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="middleName">Отчество</label>
+                    <input type="text" id="middleName">
+                </div>
+                <div class="form-group">
+                    <label for="address">Адрес</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="deliveryYes" name="delivery" value="yes" checked>
+                    <label for="deliveryYes">Вам нужна доставка?</label>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="modal-btn cancel" id="cancelOrder">Отменить</button>
+                    <button type="submit" class="modal-btn confirm">Подтвердить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

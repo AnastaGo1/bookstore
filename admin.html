@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель | World of Books</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="img/icons/favicon all.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/icons/book.svg" alt="World of Books"></a>
+                        <a href="index.html"><span>World of Books</span></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Название книги или автор">
+                        <button><img src="img/icons/search.svg" alt="Поиск"></button>
+                    </div>
+                    <nav class="user-nav">
+                        <a href="#"><img src="img/icons/notify.svg" alt="Уведомления"> Уведомления</a>
+                        <a href="wishlist.html"><img src="img/icons/heart.svg" alt="Отложено"> Отложено</a>
+                        <a href="cart.html"><img src="img/icons/shop.svg" alt="Корзина"> Корзина</a>
+                        <a href="#" onclick="logout(); return false;">Выйти</a>
+                    </nav>
+                </div>
+                <nav class="main-nav">
+                    <a href="contacts.html">Контакты</a>
+                    <a href="locations.html">Где мы?</a>
+                    <a href="index.html">Популярные книги</a>
+                    <a href="genres.html">Книги по жанрам</a>
+                    <a href="categories.html">Книги по категориям</a>
+                    <a href="index.html#reviews">Новые отзывы</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container admin-panel">
+                <h2>Админ-панель</h2>
+                
+                <div class="admin-section">
+                    <h3>Управление книгами</h3>
+                    <button class="admin-btn add" id="addBookBtn">Добавить книгу</button>
+                    <table class="admin-table" id="booksTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Название</th>
+                                <th>Автор</th>
+                                <th>Жанр</th>
+                                <th>Цена</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Книги будут загружаться здесь -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="admin-section">
+                    <h3>Управление отзывами</h3>
+                    <table class="admin-table" id="reviewsTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Книга</th>
+                                <th>Автор отзыва</th>
+                                <th>Текст</th>
+                                <th>Дата</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Отзывы будут загружаться здесь -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- Модальное окно для добавления/редактирования книги -->
+        <div class="modal-overlay" id="bookModal">
+            <div class="modal-content">
+                <h3 class="modal-title" id="bookModalTitle">Добавить новую книгу</h3>
+                <form id="bookForm">
+                    <input type="hidden" id="bookId">
+                    <div class="form-group">
+                        <label for="bookTitle">Название</label>
+                        <input type="text" id="bookTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookAuthor">Автор</label>
+                        <input type="text" id="bookAuthor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookGenre">Жанр</label>
+                        <input type="text" id="bookGenre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookPrice">Цена</label>
+                        <input type="number" id="bookPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookDescription">Описание</label>
+                        <textarea id="bookDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookImage">URL изображения</label>
+                        <input type="text" id="bookImage" required>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="modal-btn cancel" id="cancelBookBtn">Отменить</button>
+                        <button type="submit" class="modal-btn confirm">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Модальное окно для подтверждения удаления -->
+        <div class="modal-overlay" id="confirmModal">
+            <div class="modal-content">
+                <h3 class="modal-title">Подтверждение</h3>
+                <p id="confirmMessage">Вы уверены, что хотите удалить этот элемент?</p>
+                <div class="modal-actions">
+                    <button type="button" class="modal-btn cancel" id="cancelConfirmBtn">Отменить</button>
+                    <button type="button" class="modal-btn confirm" id="confirmBtn">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h3>Помощь</h3>
+                        <ul>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Курьерская доставка</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Розничная сеть</h3>
+                        <ul>
+                            <li><a href="locations.html">Адреса магазинов</a></li>
+                            <li><a href="#">Хотите у нас работать?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Важно</h3>
+                        <ul>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                            <li><a href="#">Предзаказ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Мы в соцсетях</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-vk"></i> Вконтакте</a></li>
+                            <li><a href="#"><i class="fab fa-telegram"></i> Телеграм</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 World of Books. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

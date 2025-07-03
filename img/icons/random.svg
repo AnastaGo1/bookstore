@@ -1,0 +1,9 @@
+<svg width="55" height="45" viewBox="0 0 55 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 26C26 20.4772 30.4772 16 36 16H44C49.5228 16 54 20.4772 54 26V34C54 39.5228 49.5228 44 44 44H36C30.4772 44 26 39.5228 26 34V26Z" fill="white" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="39.9999" cy="30" r="2.73333" fill="black" stroke="black" stroke-width="2"/>
+<path d="M7.07107 26.8701C3.16583 22.9648 3.16583 16.6332 7.07107 12.7279L12.7279 7.07109C16.6332 3.16585 22.9648 3.16585 26.8701 7.07109L32.5269 12.7279C36.4322 16.6332 36.4322 22.9648 32.5269 26.8701L26.8701 32.5269C22.9648 36.4322 16.6332 36.4322 12.7279 32.5269L7.07107 26.8701Z" fill="#FF4C4C" stroke="black" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="10.2313" cy="19.7521" r="1.75" transform="rotate(-45 10.2313 19.7521)" fill="black" stroke="black" stroke-width="2.1"/>
+<circle cx="20.1307" cy="9.8526" r="1.75" transform="rotate(-45 20.1307 9.8526)" fill="black" stroke="black" stroke-width="2.1"/>
+<circle cx="20.1307" cy="29.6516" r="1.75" transform="rotate(-45 20.1307 29.6516)" fill="black" stroke="black" stroke-width="2.1"/>
+<circle cx="30.0304" cy="19.7521" r="1.75" transform="rotate(-45 30.0304 19.7521)" fill="black" stroke="black" stroke-width="2.1"/>
+</svg>

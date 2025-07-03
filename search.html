@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расширенный поиск | World of Books</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="img/icons/favicon all.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/icons/book.svg" alt="World of Books"></a>
+                        <a href="index.html"><span>World of Books</span></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Название книги или автор">
+                        <button><img src="img/icons/search.svg" alt="Поиск"></button>
+                    </div>
+                    <nav class="user-nav">
+                        <a href="#"><img src="img/icons/notify.svg" alt="Уведомления"> Уведомления</a>
+                        <a href="wishlist.html"><img src="img/icons/heart.svg" alt="Отложено"> Отложено</a>
+                        <a href="cart.html"><img src="img/icons/shop.svg" alt="Корзина"> Корзина</a>
+                        <a href="login.html">Регистрация</a>
+                        <a href="login.html">Вход</a>
+                    </nav>
+                </div>
+                <nav class="main-nav">
+                    <a href="contacts.html">Контакты</a>
+                    <a href="locations.html">Где мы?</a>
+                    <a href="index.html">Популярные книги</a>
+                    <a href="genres.html">Книги по жанрам</a>
+                    <a href="categories.html">Книги по категориям</a>
+                    <a href="index.html#reviews">Новые отзывы</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h2>Расширенный поиск</h2>
+                
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <h4>Жанры</h4>
+                        <div class="filter-options">
+                            <div class="filter-option">Фантастика</div>
+                            <div class="filter-option">Детектив</div>
+                            <div class="filter-option">Боевик</div>
+                            <div class="filter-option">Романтика</div>
+                            <div class="filter-option">Триллер</div>
+                            <div class="filter-option">Фэнтези</div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Категории</h4>
+                        <div class="filter-options">
+                            <div class="filter-option">Проза</div>
+                            <div class="filter-option">Детское</div>
+                            <div class="filter-option">Классика</div>
+                            <div class="filter-option">Научная</div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Цена</h4>
+                        <div class="price-range">
+                            <input type="number" placeholder="От" id="minPrice">
+                            <span>-</span>
+                            <input type="number" placeholder="До" id="maxPrice">
+                        </div>
+                    </div>
+                    
+                    <button class="btn-buy" id="applyFilters">Применить фильтры</button>
+                </div>
+                
+                <div class="books-grid" id="searchResults">
+                    <!-- Результаты поиска будут здесь -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h3>Помощь</h3>
+                        <ul>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Курьерская доставка</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Розничная сеть</h3>
+                        <ul>
+                            <li><a href="locations.html">Адреса магазинов</a></li>
+                            <li><a href="#">Хотите у нас работать?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Важно</h3>
+                        <ul>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                            <li><a href="#">Предзаказ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Мы в соцсетях</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-vk"></i> Вконтакте</a></li>
+                            <li><a href="#"><i class="fab fa-telegram"></i> Телеграм</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 World of Books. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

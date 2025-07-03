@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Books</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="img/icons/favicon all.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/icons/book.svg" alt="World of Books"></a>
+                        <a href="index.html"><span>World of Books</span></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Название книги или автор">
+                        <button><img src="img/icons/search.svg" alt="Поиск"></button>
+                    </div>
+                    <nav class="user-nav">
+                        <a href="#" id="notificationsLink"><img src="img/icons/notify.svg" alt="Уведомления"> Уведомления</a>
+                        <a href="wishlist.html"><img src="img/icons/heart.svg" alt="Отложено"> Отложено</a>
+                        <a href="cart.html"><img src="img/icons/shop.svg" alt="Корзина"> Корзина</a>
+                        <a href="login.html" id="registerLink">Регистрация</a>
+                        <a href="login.html" id="loginLink">Вход</a>
+                    </nav>
+                </div>
+                <nav class="main-nav">
+                    <a href="contacts.html">Контакты</a>
+                    <a href="locations.html">Где мы?</a>
+                    <a href="index.html">Популярные книги</a>
+                    <a href="genres.html">Книги по жанрам</a>
+                    <a href="categories.html">Книги по категориям</a>
+                    <a href="index.html#reviews">Новые отзывы</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <div class="container main-container">
+                <!-- Основной контент слева -->
+                <div class="content-left">
+                    <!-- Популярные книги (4 книги) -->
+                    <section class="popular-books">
+                        <h2>Популярные книги</h2>
+                        <div class="books-grid">
+
+                            <!-- Гарри Поттер -->
+         <div class="book-card">
+            <div class="book-image-container">
+                <img src="img/popular/GarryP.svg" alt="Гарри Поттер">
+                <button class="heart-btn" data-id="2"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="book-info">
+                <div class="book-author">Джоан Роулинг</div>
+                <div class="book-title">Гарри Поттер и узник Азкабана</div>
+                <p class="book-description">Долгих двенадцать лет кровожадный убийца Сириус Блэк провел в заточении мрачной тюрьмы магического мира - Азкабане. И теперь на свободе, он бежал из тюрьмы и его цель - убить Гарри Поттера.</p>
+                <div class="book-actions">
+                    <button class="btn-buy">Купить</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Зеленая миля -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <img src="img/popular/GreenM.svg" alt="Зеленая миля">
+                    <button class="heart-btn" data-id="1"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="book-info">
+                    <div class="book-author">Стивен Кинг</div>
+                    <div class="book-title">Зеленая миля</div>
+                    <p class="book-description">Однажды в камеру привозят мужчину, который приговорен к смерти за убийство двух маленьких девочек. В ходе знакомства с ним главный герой понимает, что тот - обладатель божественного дара целительства.</p>
+                    <div class="book-actions">
+                        <button class="btn-buy"> Купить</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Игра престолов -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <img src="img/popular/GameP.svg" alt="Игра престолов">
+                    <button class="heart-btn" data-id="3"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="book-info">
+                    <div class="book-author">Джордж Мартин</div>
+                    <div class="book-title">Игра престолов</div>
+                    <p class="book-description">В легендарной «Песни льда и огня» политические игры тесно переплетаются с дворцовыми интригами, а смелые повороты сюжета полностью меняют ход истории.</p>
+                    <div class="book-actions">
+                        <button class="btn-buy"> Купить</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Властелин колец -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <img src="img/popular/LordR.svg" alt="Властелин колец">
+                    <button class="heart-btn" data-id="13"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="book-info">
+                    <div class="book-author">Джон Р. Р. Толкин</div>
+                    <div class="book-title">Властелин колец</div>
+                    <p class="book-description">Удивительный, полный опасностей и приключений, находящийся под вечным противостоянием добра и зла мир. На долю маленького хоббита Фродо выпала участь пройти через все Средиземье.</p>
+                    <div class="book-actions">
+                        <button class="btn-buy"> Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Покупают сегодня (5 книг) -->
+    <section class="genre-books">
+        <h2>Покупают сегодня</h2>
+        <div class="genre-tabs">
+            <div class="genre-grid">
+                <div class="genre-book">
+                    <img src="img/genre/GameP.svg" alt="Игра престолов">
+                    <button class="heart-btn" data-id="5"><i class="far fa-heart"></i></button>
+                    <span class="genre-label">Игра престолов</span>
+                    <button class="btn-buy">Купить</button>
+                </div>
+                <div class="genre-book">
+                    <img src="img/genre/Dune.svg" alt="Дюна">
+                    <button class="heart-btn" data-id="6"><i class="far fa-heart"></i></button>
+                    <span class="genre-label">Дюна</span>
+                    <button class="btn-buy">Купить</button>
+                </div>
+                <div class="genre-book">
+                    <img src="img/genre/Metro2033.svg" alt="Метро 2033">
+                    <button class="heart-btn" data-id="7"><i class="far fa-heart"></i></button>
+                    <span class="genre-label">Метро 2033</span>
+                    <button class="btn-buy">Купить</button>
+                </div>
+                <div class="genre-book">
+                    <img src="img/genre/Vedmak.svg" alt="Ведьмак">
+                    <button class="heart-btn" data-id="8"><i class="far fa-heart"></i></button>
+                    <span class="genre-label">Ведьмак</span>
+                    <button class="btn-buy">Купить</button>
+                </div>
+                <div class="genre-book">
+                    <img src="img/genre/451С.svg" alt="451 градус по Фаренгейту">
+                    <button class="heart-btn" data-id="7"><i class="far fa-heart"></i></button>
+                    <span class="genre-label">451 градус по Фаренгейту</span>
+                    <button class="btn-buy">Купить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Выбор редакции (5 книг) -->
+    <section class="editor-choice">
+        <h2>Выбор редакции</h2>
+        <div class="choice-grid">
+            <div class="choice-book">
+                <img src="img/redakt/451С.svg" alt="451 градус по Фаренгейту">
+                <button class="heart-btn" data-id="10"><i class="far fa-heart"></i></button>
+                <span class="genre-label">451 градус по Фаренгейту</span>
+                <button class="btn-buy">Купить</button>
+            </div>
+            <div class="choice-book">
+                <img src="img/redakt/Dorian.svg" alt="Портрет Дориана Грея">
+                <button class="heart-btn" data-id="8"><i class="far fa-heart"></i></button>
+                <span class="genre-label">Портрет Дориана Грея</span>
+                <button class="btn-buy">Купить</button>
+            </div>
+            <div class="choice-book">
+                <img src="img/redakt/Grim.svg" alt="Грим">
+                <button class="heart-btn" data-id="12"><i class="far fa-heart"></i></button>
+                <span class="genre-label">Грим</span>
+                <button class="btn-buy">Купить</button>
+            </div>
+            <div class="choice-book">
+                <img src="img/redakt/Rock.svg" alt="Роковая музыка">
+                <button class="heart-btn" data-id="13"><i class="far fa-heart"></i></button>
+                <span class="genre-label">Роковая музыка</span>
+                <button class="btn-buy">Купить</button>
+            </div>
+            <div class="choice-book">
+                <img src="img/redakt/Tango.svg" alt="Танго с тенями">
+                <button class="heart-btn" data-id="11"><i class="far fa-heart"></i></button>
+                <span class="genre-label">Танго с тенями</span>
+                <button class="btn-buy">Купить</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- Отзывы  -->
+    <section class="reviews" id="reviews">
+        <div class="all-reviews-header">
+            <h2>Новые отзывы на книги</h2>
+            <button class="show-all-btn" onclick="window.location.href='reviews.html'">Показать все</button>
+        </div>
+        <div class="reviews-grid">
+            <!-- Отзыв 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="img/review/Divergent.svg" alt="Дивергент" class="review-book-cover">
+                    <div class="review-title">
+                        <h3>Дивергент</h3>
+                        <div class="review-meta">
+                            <span class="date">Дата написания: 02.07.25</span>
+                            <span class="author">Автор: Жукова Дарья</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Очень люблю книги Рея Брэдбери. Безумно талантливый писатель. Большинство его произведений связано с будущим, которое погружено в пучину электроники и отринуло от себя понятие "души". И "451 градусов по Фаренгейту" далеко не отходит от своей тематики. Это то будущее, к которому мы с вами идём семимильными шагами. И то будущее, к которому мы неминуемо придём.</p>
+            </div>
+            
+            <!-- Отзыв 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="img/review/PovMux.svg" alt="Повелитель мух" class="review-book-cover">
+                    <div class="review-title">
+                        <h3>Повелитель мух</h3>
+                        <div class="review-meta">
+                            <span class="date">Дата написания: 01.07.25</span>
+                            <span class="author">Автор: Гусакова Алла</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Эта книга о нас, о настоящих жителях планеты Земля. Это книга о тех благах, о которых мы не задумываемся. И конкретно мы, и кто-то там, кто заправляет всем. Это срез общества. Здесь есть малыши, которые ничего не могут. Говорит ли автор что кто-то из детей виноват в трагедиях, которые произошли в книге? Я думаю, что Голдинг очень умело подобрал стиль повествования.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+ <!-- Боковая панель справа (полный список жанров) -->
+<aside class="sidebar">
+    <div class="sidebar-block">
+        <h3>Основа сайта</h3>
+        <button class="help-btn" onclick="openGuideModal()">Путеводитель по странице</button>
+    </div>
+
+    <div class="sidebar-block">
+        <h3>Расширенный поиск</h3>
+        <button class="help-btn" onclick="window.location.href='search.html'">Перейти к расширенному поиску</button>
+    </div>
+
+     <div class="sidebar-block">
+        <h3>Добавить случайную книгу в корзину</h3>
+        <button class="random-btn" id="randomBookBtn">
+            <img src="img/icons/random.svg" alt="Случайная книга">
+            <span>Мне повезет!</span>
+        </button>
+    </div>
+
+    <div class="sidebar-block">
+        <h3>Книги по жанрам</h3>
+        <div class="genre-list">
+            <a href="#">Абсурд</a>
+            <a href="#">Автобиографический</a>
+            <a href="#">Альтернативная история</a>
+            <a href="#">Антиутопия</a>
+            <a href="#">Биографический</a>
+            <a href="#">Боевик</a>
+            <a href="#">Борьба за наследство</a>
+            <a href="#">Вестерн</a>
+            <a href="#">Военный</a>
+            <a href="#">Героика</a>
+            <a href="#">Детектив</a>
+            <a href="#">Драма</a>
+            <a href="#">Ирония</a>
+            <a href="#">Киберпанк</a>
+            <a href="#">Комедия</a>
+            <a href="#">Лирика</a>
+            <a href="#">Любовный роман</a>
+            <a href="#">Мелодрама</a>
+            <a href="#">Приключения</a>
+            <a href="#">Сатира</a>
+            <a href="#">Трагедия</a>
+            <a href="#">Утопия</a>
+            <a href="#">Фантастика</a>
+            <a href="#">Философский</a>
+            <a href="#">Эпический</a>
+            <a href="#">Юмор</a>
+        </div>
+    </div>
+
+    <div class="sidebar-block">
+        <h3>Книги по категориям</h3>
+        <div class="category-list">
+            <a href="#">Бульварная проза</a>
+            <a href="#">Детское</a>
+            <a href="#">Искусство</a>
+            <a href="#">Классическая литература</a>
+            <a href="#">Наука и образование</a>
+            <a href="#">Проза</a>
+            <a href="#">Публицистика</a>
+            <a href="#">Ранобэ</a>
+            <a href="#">Сетевая публикация</a>
+            <a href="#">Эпос</a>
+        </div>
+    </div>
+</aside>
+            </div>
+        </main>
+
+        <!-- Подвал сайта -->
+         <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h3>Помощь</h3>
+                        <ul>
+                            <li><a href="#">Как сделать заказ</a></li>
+                            <li><a href="#">Курьерская доставка</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Розничная сеть</h3>
+                        <ul>
+                            <li><a href="locations.html">Адреса магазинов</a></li>
+                            <li><a href="#">Хотите у нас работать?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Важно</h3>
+                        <ul>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                            <li><a href="#">Предзаказ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Мы в соцсетях</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-vk"></i> Вконтакте</a></li>
+                            <li><a href="#"><i class="fab fa-telegram"></i> Телеграм</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2025 World of Books. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/guide.js"></script>
+</body>
+</html>
